@@ -16,5 +16,4 @@ $(compgen -A function)" 2>/dev/null
 exit 1
 fi
 
-set -x
 $*
