@@ -2,7 +2,7 @@
 
 # Since we are sourcing build file, should be careful here not to create any function as they may get shadowed by us
 
-BUDFILE="Budfile"
+BUDFILE="Budzfile"
 if [ -r "$BUDFILE" ]; then
     source "$BUDFILE"
 else
