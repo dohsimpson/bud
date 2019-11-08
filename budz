@@ -1,0 +1,19 @@
+#!/usr/bin/env zsh
+
+# Since we are sourcing build file, should be careful here not to create any function as they may get shadowed by us
+
+BUDFILE="Budfile"
+if [ -r "$BUDFILE" ]; then
+    source "$BUDFILE"
+else
+    echo "No Budfile found" 2>/dev/null
+    exit 1
+fi
+
+if [ "$#" -eq 0 ]; then
+    echo "No argument specified, specifying one of the following build command:
+${(k)functions[@]}" 2>/dev/null
+exit 1
+fi
+
+$*
