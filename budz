@@ -6,7 +6,7 @@ BUDFILE="Budzfile"
 if [ -r "$BUDFILE" ]; then
     source "$BUDFILE"
 else
-    echo "No Budfile found" 2>/dev/null
+    echo "No Budzfile found" 2>/dev/null
     exit 1
 fi
 
