@@ -10,7 +10,7 @@ else
     exit 1
 fi
 
-if [ "$1" = "-x" ]; then
+if [ "${1-}" = "-x" ]; then
     shift
     SETX=1
 fi
@@ -20,5 +20,5 @@ if [ "$#" -eq 0 ]; then
     exit 1
 fi
 
-[ -n "$SETX" ] && set -x
+[ -n "${SETX-}" ] && set -x
 $*
