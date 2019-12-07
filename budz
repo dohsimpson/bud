@@ -6,13 +6,16 @@ BUDFILE="Budzfile"
 if [ -r "$BUDFILE" ]; then
     source "$BUDFILE"
 else
-    echo "No Budzfile found" 2>/dev/null
+    echo "No $BUDFILE found" 2>/dev/null
     exit 1
 fi
 
 if [ "$#" -eq 0 ]; then
     echo "No argument specified, specifying one of the following build command: ${(k)functions[@]}" 2>/dev/null
     exit 1
+elif [ "$1" = "-x" ]; then
+    shift
+    set -x
 fi
 
 $*

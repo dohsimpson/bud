@@ -65,3 +65,5 @@ bud details
 ```
 
 If you have autocomplete, you can press `<tab>` to auto complete your function name. E.g. `bud b<tab>` -> `bud build`
+
+If you want to turn on `set -x`, pass `-x` as the first argument to bud, like this `bud -x CMD...`
