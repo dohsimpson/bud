@@ -11,9 +11,8 @@ else
 fi
 
 if [ "$#" -eq 0 ]; then
-    echo "No argument specified, specifying one of the following build command:
-$(compgen -A function)" 2>/dev/null
-exit 1
+    echo "No argument specified, specifying one of the following build command: $(compgen -A function)" 2>/dev/null
+    exit 1
 fi
 
 $*
