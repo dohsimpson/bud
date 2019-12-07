@@ -16,9 +16,7 @@ That is what Bud does.
 
 ## Installation
 
-If you want to give it a try, you can just grab the file `bud` and run it from anywhere.
-
-It's recommended to copy it under somewhere like `/usr/local/bin/` where you can call it without specifying the full path. e.g. `cp bud /usr/local/bin/`
+Run `./install.sh` inside this git repo on your terminal. This will install bud and budz (bud for zsh) for you.
 
 To use autocompletion, source the file `bud_completer.sh` from your shell startup file. e.g. `echo "source $PWD/bud_completer.sh" >> ~/.bashrc`
 
